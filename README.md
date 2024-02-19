@@ -19,9 +19,12 @@ ars0um/alpine-nvim; unset -f f; }; f'
 
 Some useful shortcuts:
 
-```\ -``` opens NerdTree, I would not keep that open as it is easy to end up fzf'ing in its buffer by mistake
+```\ -``` toggles NerdTree, I would not keep that open as it is easy to end up fzf'ing in its buffer by mistake
+
 ```<space> p``` fzf files
+
 ```<space> b``` fzf open buffers
+
 ```<space> g``` grep through files
 
 
