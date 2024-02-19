@@ -27,5 +27,5 @@ Some useful shortcuts:
 
 ```<space> g``` grep through files
 
-
+To build just make sure you have docker and docker-compose installed and the build-tools to run make and run ```make```.
 
