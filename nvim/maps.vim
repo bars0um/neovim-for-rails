@@ -11,7 +11,16 @@ nnoremap <leader>b :CocCommand explorer<CR>
 "noremap <Right> <Nop>
 
 " Select all
-nmap <C-a> gg<S-v>G
+" nmap <C-a> gg<S-v>G
+map <C-a> <ESC>^
+imap <C-a> <ESC>I
+map <C-e> <ESC>$
+imap <C-e> <ESC>A
+
+" save file ctrl-s
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
 
 " Tabs
 nmap te :tabedit
@@ -54,8 +63,8 @@ nnoremap <silent> <space>w       :<C-u>CocFzfList words<CR>
 
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of language server.
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
+" nmap <silent> <C-s> <Plug>(coc-range-select)
+" xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.
 if has('nvim-0.4.0') || has('patch-8.2.0750')
